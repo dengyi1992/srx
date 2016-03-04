@@ -14,6 +14,7 @@ var meitu = require('./routes/meitu');
 var weixinjingxuan = require('./routes/weixinjingxuan');
 var yule = require('./routes/yule');
 var qiwen = require('./routes/qiwen');
+var crawler = require('./routes/crawler');
 
 var app = express();
 
@@ -41,6 +42,16 @@ app.use('/meitu_c',meitu);
 app.use('/weixinjingxuan_c',weixinjingxuan);
 app.use('/yule_c',yule);
 app.use('/qiwen_c',qiwen);
+
+/**
+ * 爬虫
+ */
+app.use('/crawler',crawler);
+
+
+
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
