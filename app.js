@@ -15,7 +15,8 @@ var weixinjingxuan = require('./routes/weixinjingxuan');
 var yule = require('./routes/yule');
 var qiwen = require('./routes/qiwen');
 var crawler = require('./routes/crawler');
-
+var crawler1 = require('./routes/crawler1');
+var crawler2 = require('./routes/crawler2');
 var app = express();
 
 // view engine setup
@@ -44,9 +45,12 @@ app.use('/yule_c',yule);
 app.use('/qiwen_c',qiwen);
 
 /**
- * 爬虫
+ * 爬虫接口
  */
 app.use('/crawler',crawler);
+app.use('/crawler1',crawler1);
+app.use('/crawler2',crawler2);
+//例如： /crawler2?num=1, num表示第几页
 
 
 
