@@ -23,6 +23,8 @@ var crawler = require('./routes/crawler');
 var crawler1 = require('./routes/crawler1');
 var crawler2 = require('./routes/crawler2');
 var tenxunit = require('./routes/tenxunit');
+var toutiaoc_1 = require('./routes/toutiaoc_1');
+var toutiaoc_wenge = require('./routes/toutiaoc_wenge');
 var app = express();
 
 // view engine setup
@@ -58,6 +60,9 @@ app.use('/crawler1',crawler1);
 app.use('/crawler2',crawler2);
 //例如： /crawler2?num=1, num表示第几页
 app.use('/tenxunit',tenxunit);
+app.use('/toutiaoc_1',toutiaoc_1);
+app.use('/toutiaoc_wenge',toutiaoc_wenge);
+
 
 
 
