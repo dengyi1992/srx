@@ -25,11 +25,18 @@ var crawler2 = require('./routes/crawler2');
 var tenxunit = require('./routes/tenxunit');
 var toutiaoc_1 = require('./routes/toutiaoc_1');
 var toutiaoc_wenge = require('./routes/toutiaoc_wenge');
+/**
+ * 登錄
+ */
+var admin_login=require('./routes/login_admin.js');
+
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+
+
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -42,6 +49,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 /**
  * 以下为控制接口
+ * get
  */
 app.use('/users', users);
 app.use('/health_c',health);
@@ -54,6 +62,7 @@ app.use('/qiwen_c',qiwen);
 
 /**
  * 爬虫接口
+ * get
  */
 app.use('/crawler',crawler);
 app.use('/crawler1',crawler1);
@@ -63,8 +72,18 @@ app.use('/tenxunit',tenxunit);
 app.use('/toutiaoc_1',toutiaoc_1);
 app.use('/toutiaoc_wenge',toutiaoc_wenge);
 
-
-
+/**
+ * 管理員登錄
+ */
+app.use('/admin_login',admin_login);
+/**
+ * 方式 post
+ * /admin_login
+ * x-www-form-urlencoded
+ * params:
+ * name : deng
+ * password : deng
+ */
 
 
 
