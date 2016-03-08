@@ -22,47 +22,48 @@ var items = [];
 var options = {
     method: 'GET',
     encoding: null,
-    url: 'http://toutiao.com/m3651069942/p2'
+    url: 'http://bbs.hupu.com/bxj-1'
 }
+var Iconv = require('iconv').Iconv;//用于乱码解决
+var iconv = new Iconv('GBK', 'UTF-8');
 /* GET users listing. */
 router.get('/', function (req, res, next) {
     request(options, function (error, response, body) {
         if (!error && response.statusCode == 200) {
-            console.log(body);    //返回请求页面的HTML
-            acquireData(body);
+              //返回请求页面的HTML
+            var result = iconv.convert(new Buffer(body, 'binary')).toString();
+            console.log(result);
+            acquireData(result);
         }
     });
 
     function acquireData(data) {
         var $ = cheerio.load(data);  //cheerio解析data
-        var link = $('.pin h3 a').toArray();  //将所有的img放到一个数组中
-        var linking = $('.pin .list_image ul').toArray();  //将所有的img放到一个数组中
+        var link = $('tr .p_title div').toArray();  //将所有的img放到一个数组中
 
         console.log(link.length);
         var len = link.length;
         for (var i = 0; i < len; i++) {
-            var href = link[i].attribs.href;
-            var titl = link[i].children[0].data;
+            var href ='http://bbs.hupu.com'+link[i].next.next.attribs.href
+            var titl =link[i].next.next.children["0"].data;
+
+
             items.push({
                 title: titl,
-                h: href,
-                imgurl1: linking[i].children["1"].children["0"].children["0"].attribs.src,
-                imgurl2: linking[i].children["3"].children["0"].children["0"].attribs.src,
-                imgurl3: linking[i].children["5"].children["0"].children["0"].attribs.src
-
+                link: href
             });
         }
         res.send(items);
-        myEvents.emit('geted');
+        //myEvents.emit('geted');
     };
 
 });
 myEvents.on('geted',function(){
    //寫入數據庫
     for (var i=0;i<items.length;i++){
-        var  userAddSql_Params = [items[i].title,items[i].h,items[i].imgurl1,items[i].imgurl2,items[i].imgurl3];
+        var  userAddSql_Params = [items[i].title,items[i].h,items[i].desc,items[i].imgurl];
         console.log(userAddSql_Params);
-        var  userAddSql = 'INSERT INTO toutiao_wenge(title,url,image_url1,image_url2,image_url3) VALUES(?,?,?,?,?)';
+        var  userAddSql = 'INSERT INTO topnews9(title,url,abstract,image_url) VALUES(?,?,?,?)';
 
         conn.query(userAddSql,userAddSql_Params,function(err,result){
             if (err){

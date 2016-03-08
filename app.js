@@ -26,6 +26,7 @@ var tenxunit = require('./routes/tenxunit');
 var toutiaoc_1 = require('./routes/toutiaoc_1');
 var toutiaoc_wenge = require('./routes/toutiaoc_wenge');
 var topnews9 = require('./routes/topnews9');
+var buxingjie= require('./routes/buxingjie');
 /**
  * 登錄
  */
@@ -73,6 +74,7 @@ app.use('/tenxunit',tenxunit);
 app.use('/toutiaoc_1',toutiaoc_1);
 app.use('/toutiaoc_wenge',toutiaoc_wenge);
 app.use('/topnews9',topnews9);
+app.use('/buxingjie',buxingjie);
 
 
 /**
@@ -84,8 +86,8 @@ app.use('/admin_login',admin_login);
  * /admin_login
  * x-www-form-urlencoded
  * params:
- * name : deng
- * password : deng
+ * name : 978548481@qq.com
+ * password : dengyi
  */
 
 

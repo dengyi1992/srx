@@ -27,7 +27,7 @@ router.get('/', function(req, res, next) {
             console.log(imgsrc);                //输出地址
             items.push({
                 title:desc,
-                link:imgsrc,
+                imgurl1:imgsrc,
                 h:href
             });
         }
