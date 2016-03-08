@@ -2,8 +2,6 @@ var express = require('express');
 var router = express.Router();
 var cheerio = require('cheerio');
 var request = require('request');
-var Iconv = require('iconv').Iconv;//用于乱码解决
-var iconv = new Iconv('GBK', 'UTF-8');
 var EventEmitter = require('events').EventEmitter;
 var myEvents = new EventEmitter();
 var mysql = require('mysql');
@@ -24,8 +22,7 @@ var options = {
     encoding: null,
     url: 'http://toutiao.com/m3660954711/ '
 }
-var Iconv = require('iconv').Iconv;//用于乱码解决
-var iconv = new Iconv('GBK', 'UTF-8');
+
 /* GET users listing. */
 router.get('/', function (req, res, next) {
     request(options, function (error, response, body) {
@@ -43,8 +40,13 @@ router.get('/', function (req, res, next) {
         var imglink = $('.pin .pin-content .text').toArray();  //将所有的img放到一个数组中console.log(link.length);
         var len = link.length;
         for (var i = 0; i < len; i++) {
-            var href =link[i].next.next.attribs.href
-            var titl =link[i].next.next.children["0"].data;
+            var href =link[i].attribs.href;
+            var titl =link[i].children[0].data;
+            if(imglink[i].parent.children[1].attribs.class=='list_image'){
+                //表示是3张图片
+            }else if (imglink[i].parent.children[1].attribs.class=='img_bg shadow_img'){
+                //一张图片
+            }
 
 
             items.push({
