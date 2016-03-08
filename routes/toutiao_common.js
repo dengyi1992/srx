@@ -53,7 +53,7 @@ router.get('/', function (req, res, next) {
             });
         }
         res.send(items);
-        //myEvents.emit('geted');
+        //myEvents.emit('geted');imglink[3].parent.children[1].attribs  imglink[1].parent.children[1].attribs  类不一样
     };
 
 });
