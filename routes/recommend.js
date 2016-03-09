@@ -18,7 +18,7 @@ router.get('/', function (req, res, next) {
 
 
     //var userAddSql_Params = [newslist.ctime, newslist.title, newslist.description, newslist.picUrl, newslist.url];
-    var userAddSql = "SELECT * FROM toutiao limit 20";
+    var userAddSql = "SELECT * FROM toutiao ORDER BY id desc limit 20";
 
     conn.query(userAddSql, function (err, rows, fields) {
         if (err) throw err;
