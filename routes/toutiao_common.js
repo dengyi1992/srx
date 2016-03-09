@@ -75,6 +75,7 @@ router.get('/', function (req, res, next) {
 
 
             }
+            myEvents.emit('geted',items);
             res.send(items);
         };
 
@@ -82,8 +83,17 @@ router.get('/', function (req, res, next) {
 myEvents.on('geted', function (items) {
     //寫入數據庫
     for (var i = 0; i < items.length; i++) {
-        var userAddSql_Params = [items[i].title, items[i].h, items[i].desc, items[i].imgurl];
-        var userAddSql = 'INSERT INTO topnews9(title,url,abstract,image_url) VALUES(?,?,?,?)';
+        var userAddSql_Params='';
+        var userAddSql=''
+        if (items.imgnums==1){
+            userAddSql_Params= [items[i].title, items[i].link,items[i].imgurl];
+            userAddSql = 'INSERT INTO toutiao(title,url,imgnums,imgurl) VALUES(?,?,1,?)';
+        }else {
+            userAddSql_Params= [items[i].title, items[i].link,items[i].imgurl1,items[i].imgurl2,items[i].imgurl3];
+            userAddSql = 'INSERT INTO toutiao(title,url,imgnums,imgurl1,imgurl2,imgurl3) VALUES(?,?,3,?,?,?)';
+
+        }
+
 
         conn.query(userAddSql, userAddSql_Params, function (err, result) {
             if (err) {
@@ -94,7 +104,6 @@ myEvents.on('geted', function (items) {
 
 
     }
-    items = [];
 
 });
 
