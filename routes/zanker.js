@@ -47,6 +47,7 @@ router.get('/', function (req, res, next) {
             var img=imgurl[i].attribs.style;
             items.push({
                 url:imgurl[i].parent.parent.attribs.href,
+                imgnums:1,
                 imgurl:img.substring(img.indexOf('http'),img.length-2),
                 title:imgurl[i].prev.prev.children["1"].children["1"].children["0"].data
             })
