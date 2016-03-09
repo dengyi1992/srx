@@ -7,5 +7,11 @@
       <schema-pattern>srx.*</schema-pattern>
       <default-schemas>srx.*</default-schemas>
     </data-source>
+    <data-source name="MySQL - srx@120.27.41.245" uuid="2d528f67-94ea-44af-affa-c229e306e11d">
+      <secret-storage>master_key</secret-storage>
+      <user-name>srx</user-name>
+      <schema-pattern>srx.*</schema-pattern>
+      <default-schemas>srx.*</default-schemas>
+    </data-source>
   </component>
 </project>
