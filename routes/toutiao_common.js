@@ -20,7 +20,7 @@ var conn = mysql.createConnection({
 });
 conn.connect();
 
-var items = [];
+
 var options = {
     method: 'GET',
     encoding: null,
@@ -30,6 +30,7 @@ var pagenums = 1;
 
 /* GET users listing. */
 router.get('/', function (req, res, next) {
+    var items = [];
     options.url = 'http://toutiao.com/' + req.query.toutiaonum+'/p'+req.query.pagenum+'/';
 
         request(options, function (error, response, body) {
@@ -74,11 +75,11 @@ router.get('/', function (req, res, next) {
 
 
             }
-
+            res.send(items);
         };
-    res.send(items);
+
 });
-myEvents.on('geted', function () {
+myEvents.on('geted', function (items) {
     //寫入數據庫
     for (var i = 0; i < items.length; i++) {
         var userAddSql_Params = [items[i].title, items[i].h, items[i].desc, items[i].imgurl];
