@@ -16,7 +16,7 @@ var fs = require('fs');
 var conn = mysql.createConnection({
     host:'localhost',
     user:'root',
-    password:'root',
+    password:'dengyi',
     database:'srx',
     port:3306
 });

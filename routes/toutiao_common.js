@@ -10,7 +10,7 @@ var fs = require('fs');
 var conn = mysql.createConnection({
     host:'localhost',
     user:'root',
-    password:'root',
+    password:'dengyi',
     database:'srx',
     port:3306
 });
@@ -46,13 +46,17 @@ router.get('/', function (req, res, next) {
                 //表示是3张图片
             }else if (imglink[i].parent.children[1].attribs.class=='img_bg shadow_img'){
                 //一张图片
+                items.push({
+                    title: titl,
+                    link: href,
+                    imgnums:1,
+                    imgurl:imglink[1].parent.children[1].children[1].children[1].attribs.src
+                });
+
             }
 
 
-            items.push({
-                title: titl,
-                link: href
-            });
+
         }
         res.send(items);
         //myEvents.emit('geted');imglink[3].parent.children[1].attribs  imglink[1].parent.children[1].attribs  类不一样
