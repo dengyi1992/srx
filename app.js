@@ -28,6 +28,7 @@ var toutiaoc_wenge = require('./routes/toutiaoc_wenge');
 var topnews9 = require('./routes/topnews9');
 var buxingjie= require('./routes/buxingjie');
 var toutiao_common= require('./routes/toutiao_common');
+var recommend= require('./routes/recommend');
 /**
  * 登錄
  */
@@ -119,6 +120,7 @@ app.use('/admin_login',admin_login);
  *
  *
  */
+app.use('/recommend',recommend);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
