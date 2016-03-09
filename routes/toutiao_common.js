@@ -68,7 +68,7 @@ router.get('/', function (req, res, next) {
                         title: titl,
                         link: href,
                         imgnums: 1,
-                        imgurl: imglink[1].parent.children[1].children[1].children[1].attribs.src
+                        imgurl: imglink[i].parent.children[1].children[1].children[1].attribs.src
                     });
 
                 }
@@ -85,7 +85,7 @@ myEvents.on('geted', function (items) {
     for (var i = 0; i < items.length; i++) {
         var userAddSql_Params='';
         var userAddSql=''
-        if (items.imgnums==1){
+        if (items[i].imgnums==1){
             userAddSql_Params= [items[i].title, items[i].link,items[i].imgurl];
             userAddSql = 'INSERT INTO toutiao(title,url,imgnums,imgurl) VALUES(?,?,1,?)';
         }else {
