@@ -28,6 +28,7 @@ var toutiaoc_wenge = require('./routes/toutiaoc_wenge');
 var topnews9 = require('./routes/topnews9');
 var buxingjie= require('./routes/buxingjie');
 var toutiao_common= require('./routes/toutiao_common');
+var zanker = require('./routes/zanker');
 var recommend= require('./routes/recommend');
 /**
  * 登錄
@@ -78,7 +79,7 @@ app.use('/toutiaoc_wenge',toutiaoc_wenge);
 app.use('/topnews9',topnews9);
 app.use('/buxingjie',buxingjie);
 app.use('/toutiao_common',toutiao_common);
-
+app.use('/zanker',zanker);
 
 /**
  * 管理員登錄
