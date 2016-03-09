@@ -16,7 +16,6 @@ router.get('/', function(req, res, next) {
     var page=req.query.num;
     request('http://www.the6688.com/xiaoqingxin/list_6_'+page+'.html', function (error, response, body) {
         if (!error && response.statusCode == 200) {
-            //console.log(body);    //返回请求页面的HTML
             //var result = iconv.convert(new Buffer(body, 'binary')).toString();
             acquireData(body);
         }
@@ -27,7 +26,6 @@ router.get('/', function(req, res, next) {
         var items = [];
         var meizi = $('.thumbnail img').toArray();  //将所有的img放到一个数组中
         var ll = $('.thumbnail a').toArray();
-        console.log(meizi.length);
         var len = meizi.length;
         for (var i=0; i<len; i++) {
             var imgsrc = meizi[i].attribs.src;  //用循环读出数组中每个src地址

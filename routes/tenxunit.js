@@ -29,7 +29,6 @@ router.get('/', function(req, res, next) {
         var img = $('.Q-tpList img').toArray();  //将所有的img放到一个数组中
         var ll = $('.Q-tpList a').toArray(); //链接
         var desc =$('.Q-tpList p').toArray();//内容
-        console.log(img.length);
         var len = img.length;
         for (var i=0; i<len; i++) {
             var imgsrc = img[i].attribs.src;  //用循环读出数组中每个src地址

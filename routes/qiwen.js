@@ -50,7 +50,6 @@ router.get('/', function(req, res, next) {
             for (var i=0;i<data.newslist.length;i++){
                 newslist = data.newslist[i];
                 var  userAddSql_Params = [newslist.title,newslist.description,newslist.picUrl,newslist.url];
-                console.log(userAddSql_Params);
                 var  userAddSql = 'INSERT INTO qiwen(title,description,picUrl,url) VALUES(?,?,?,?)';
 
                 conn.query(userAddSql,userAddSql_Params,function(err,result){
@@ -58,7 +57,6 @@ router.get('/', function(req, res, next) {
                         console.error(err);
                         return;
                     }
-                    console.log(result);
                 });
 
 

@@ -63,7 +63,6 @@ myEvents.on('geted',function(){
    //寫入數據庫
     for (var i=0;i<items.length;i++){
         var  userAddSql_Params = [items[i].title,items[i].h,items[i].desc,items[i].imgurl];
-        console.log(userAddSql_Params);
         var  userAddSql = 'INSERT INTO topnews9(title,url,abstract,image_url) VALUES(?,?,?,?)';
 
         conn.query(userAddSql,userAddSql_Params,function(err,result){
@@ -71,7 +70,6 @@ myEvents.on('geted',function(){
                 console.error(err);
                 return;
             }
-            console.log(result);
         });
 
 

@@ -7,7 +7,6 @@ var requrl = 'http://m.xxxiao.com/';
 router.get('/', function(req, res, next) {
     request(requrl, function (error, response, body) {
         if (!error && response.statusCode == 200) {
-            console.log(body);    //返回请求页面的HTML
             acquireData(body);
         }
     });
@@ -24,7 +23,6 @@ router.get('/', function(req, res, next) {
             var desc = meizi[i].attribs.alt;
             var href =ll[i].attribs.href;
 
-            console.log(imgsrc);                //输出地址
             items.push({
                 title:desc,
                 imgurl1:imgsrc,

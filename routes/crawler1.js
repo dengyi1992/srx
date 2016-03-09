@@ -15,7 +15,6 @@ var options = {
 router.get('/', function(req, res, next) {
     request(options, function (error, response, body) {
         if (!error && response.statusCode == 200) {
-            console.log(body);    //返回请求页面的HTML
             var result = iconv.convert(new Buffer(body, 'binary')).toString();
             acquireData(result);
         }
@@ -26,14 +25,12 @@ router.get('/', function(req, res, next) {
         var items = [];
         var meizi = $('.MeinvTuPianBox img').toArray();  //将所有的img放到一个数组中
         var ll = $('.MeinvTuPianBox a').toArray();
-        console.log(meizi.length);
         var len = meizi.length;
         for (var i=0; i<len; i++) {
             var imgsrc = meizi[i].attribs.src;  //用循环读出数组中每个src地址
             var desc = meizi[i].attribs.alt;
             var href =ll[i].attribs.href;
 
-            console.log(imgsrc);                //输出地址
             items.push({
                 title:desc,
                 imgurl1:imgsrc,

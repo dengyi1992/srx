@@ -50,7 +50,6 @@ router.get('/', function(req, res, next) {
             for (var i=0;i<data.retData.length;i++){
                 newslist = data.retData[i];
                 var  userAddSql_Params = [newslist.title,newslist.url,newslist.image_url,newslist.abstract];
-                console.log(userAddSql_Params);
                 var  userAddSql = 'INSERT INTO intime(title,url,image_url,abstract) VALUES(?,?,?,?)';
 
                 conn.query(userAddSql,userAddSql_Params,function(err,result){
@@ -58,7 +57,6 @@ router.get('/', function(req, res, next) {
                         console.error(err);
                         return;
                     }
-                    console.log(result);
                 });
 
 

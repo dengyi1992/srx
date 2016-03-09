@@ -16,7 +16,6 @@ router.get('/', function(req, res, next) {
     var page=req.query.num;
     request(options, function (error, response, body) {
         if (!error && response.statusCode == 200) {
-            console.log(body);    //返回请求页面的HTML
             //var result = iconv.convert(new Buffer(body, 'binary')).toString();
             acquireData(body);
         }
@@ -30,7 +29,6 @@ router.get('/', function(req, res, next) {
 
         //var title =$('.pin h3').;
         //var ll = $('.thumbnail a').toArray();
-        console.log(link.length);
         var len = link.length;
         for (var i=0; i<len; i++) {
             var href =link[i].attribs.href;

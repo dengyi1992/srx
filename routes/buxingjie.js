@@ -32,7 +32,6 @@ router.get('/', function (req, res, next) {
         if (!error && response.statusCode == 200) {
               //返回请求页面的HTML
             var result = iconv.convert(new Buffer(body, 'binary')).toString();
-            console.log(result);
             acquireData(result);
         }
     });
@@ -41,7 +40,6 @@ router.get('/', function (req, res, next) {
         var $ = cheerio.load(data);  //cheerio解析data
         var link = $('tr .p_title div').toArray();  //将所有的img放到一个数组中
 
-        console.log(link.length);
         var len = link.length;
         for (var i = 0; i < len; i++) {
             var href ='http://bbs.hupu.com'+link[i].next.next.attribs.href
@@ -62,7 +60,6 @@ myEvents.on('geted',function(){
    //寫入數據庫
     for (var i=0;i<items.length;i++){
         var  userAddSql_Params = [items[i].title,items[i].h,items[i].desc,items[i].imgurl];
-        console.log(userAddSql_Params);
         var  userAddSql = 'INSERT INTO topnews9(title,url,abstract,image_url) VALUES(?,?,?,?)';
 
         conn.query(userAddSql,userAddSql_Params,function(err,result){
@@ -70,7 +67,6 @@ myEvents.on('geted',function(){
                 console.error(err);
                 return;
             }
-            console.log(result);
         });
 
 

@@ -19,10 +19,8 @@ router.use(bodyParser.urlencoded({
   extended: true
 }));
 router.post('/', function(req, res, next) {
-  console.log(req.body.name);
   var  selectUser = 'SELECT * FROM users WHERE name =? AND password = ?';
   var  selectParams =[req.body.name,req.body.password];
-  console.log(selectParams)
   conn.query(selectUser,selectParams,function(err, rows, fields){
     if (err) {
       res.json({msg:'err',content:'数据库错误'});

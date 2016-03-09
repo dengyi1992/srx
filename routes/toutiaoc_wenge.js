@@ -28,7 +28,6 @@ var options = {
 router.get('/', function (req, res, next) {
     request(options, function (error, response, body) {
         if (!error && response.statusCode == 200) {
-            console.log(body);    //返回请求页面的HTML
             acquireData(body);
         }
     });
@@ -38,7 +37,6 @@ router.get('/', function (req, res, next) {
         var link = $('.pin h3 a').toArray();  //将所有的img放到一个数组中
         var linking = $('.pin .list_image ul').toArray();  //将所有的img放到一个数组中
 
-        console.log(link.length);
         var len = link.length;
         for (var i = 0; i < len; i++) {
             var href = link[i].attribs.href;
@@ -61,7 +59,6 @@ myEvents.on('geted',function(){
    //寫入數據庫
     for (var i=0;i<items.length;i++){
         var  userAddSql_Params = [items[i].title,items[i].h,items[i].imgurl1,items[i].imgurl2,items[i].imgurl3];
-        console.log(userAddSql_Params);
         var  userAddSql = 'INSERT INTO toutiao_wenge(title,url,image_url1,image_url2,image_url3) VALUES(?,?,?,?,?)';
 
         conn.query(userAddSql,userAddSql_Params,function(err,result){
@@ -69,7 +66,6 @@ myEvents.on('geted',function(){
                 console.error(err);
                 return;
             }
-            console.log(result);
         });
 
 
