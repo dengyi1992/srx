@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f9e03c4b-666b-4e18-806c-2c0b82775205" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/toutiao_common.js" afterPath="$PROJECT_DIR$/routes/toutiao_common.js" />
     </list>
     <ignored path="MyProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,11 +63,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="recommend.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="recommend.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/recommend.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29937303">
-              <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="toutiao_common.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/toutiao_common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8181818">
+              <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -102,9 +113,9 @@
         <option value="$PROJECT_DIR$/routes/toutiaoc_wenge.js" />
         <option value="$PROJECT_DIR$/routes/weixinjingxuan.js" />
         <option value="$PROJECT_DIR$/routes/yule.js" />
-        <option value="$PROJECT_DIR$/routes/toutiao_common.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/recommend.js" />
+        <option value="$PROJECT_DIR$/routes/toutiao_common.js" />
       </list>
     </option>
   </component>
@@ -613,7 +624,7 @@
       <workItem from="1457440278933" duration="3892000" />
       <workItem from="1457452255306" duration="1562000" />
       <workItem from="1457483752849" duration="365000" />
-      <workItem from="1457488137976" duration="12080000" />
+      <workItem from="1457488137976" duration="12286000" />
     </task>
     <task id="LOCAL-00001" summary="先到这">
       <created>1457085966466</created>
@@ -699,11 +710,17 @@
       <option name="project" value="LOCAL" />
       <updated>1457499571335</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="数据库查询接口">
+      <created>1457500551694</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1457500551694</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54535000" />
+    <option name="totallyTimeSpent" value="54741000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -716,7 +733,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1922" height="1054" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3278328" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -725,7 +742,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28" sideWeight="0.5019136" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3274918" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26072606" sideWeight="0.4980864" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26072606" sideWeight="0.4980864" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32673267" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17719486" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1168,14 +1185,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/toutiao_common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="60" selection-start-line="62" selection-start-column="60" selection-end-line="62" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/tenxunit.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1207,8 +1216,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/recommend.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29937303">
-          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/toutiao_common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8181818">
+          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
           <folding />
         </state>
       </provider>

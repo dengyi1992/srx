@@ -97,7 +97,6 @@ myEvents.on('geted', function (items) {
 
         conn.query(userAddSql, userAddSql_Params, function (err, result) {
             if (err) {
-                console.error(err);
                 return;
             }
         });
