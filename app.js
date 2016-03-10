@@ -32,6 +32,7 @@ var toutiao_common= require('./routes/toutiao_common');
 var zanker = require('./routes/zanker');
 var recommend= require('./routes/recommend');
 var common_i =require('./routes/common');
+var toutiao_common_c =require('./routes/toutiao_common_c');
 /**
  * 登錄
  */
@@ -82,7 +83,7 @@ app.use('/topnews9',topnews9);
 app.use('/buxingjie',buxingjie);
 app.use('/toutiao_common',toutiao_common);
 app.use('/zanker',zanker);
-
+app.use('/toutiao_common_c',toutiao_common_c);
 /**
  * 管理員登錄
  */
