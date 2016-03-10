@@ -12,7 +12,8 @@ var intime = require('./routes/intime');
 var keji = require('./routes/keji');
 var meitu = require('./routes/meitu');
 var weixinjingxuan = require('./routes/weixinjingxuan');
-
+var upload = require('./routes/upload');
+var upload_file =require('./routes/upload_file');
 /**
  * 爬虫
  * @type {router|exports|module.exports}
@@ -41,7 +42,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-
+APP_PATH=__dirname;
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -123,6 +124,10 @@ app.use('/admin_login',admin_login);
  */
 app.use('/recommend',recommend);
 // catch 404 and forward to error handler
+
+app.use('/upload',upload);
+app.use('/upload_file',upload_file);
+
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
