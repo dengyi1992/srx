@@ -31,6 +31,7 @@ var buxingjie= require('./routes/buxingjie');
 var toutiao_common= require('./routes/toutiao_common');
 var zanker = require('./routes/zanker');
 var recommend= require('./routes/recommend');
+var common_i =require('./routes/common');
 /**
  * 登錄
  */
@@ -123,6 +124,7 @@ app.use('/admin_login',admin_login);
  *
  */
 app.use('/recommend',recommend);
+app.use('/common',common_i);
 // catch 404 and forward to error handler
 
 app.use('/upload',upload);
