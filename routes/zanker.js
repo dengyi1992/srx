@@ -45,12 +45,22 @@ router.get('/', function (req, res, next) {
         var len =imgurl.length;
         for (var i = 0; i < len; i++) {
             var img=imgurl[i].attribs.style;
-            items.push({
-                url:imgurl[i].parent.parent.attribs.href,
-                imgnums:1,
-                imgurl:img.substring(img.indexOf('http'),img.length-2),
-                title:imgurl[i].prev.prev.children["1"].children["1"].children["0"].data
-            })
+            if (img.substring(img.indexOf('http'),img.length-2)=='border:non')
+            {
+                items.push({
+                    url:imgurl[i].parent.parent.attribs.href,
+                    imgnums:0,
+                    title:imgurl[i].prev.prev.children["1"].children["1"].children["0"].data
+                })
+            }else {
+                items.push({
+                    url:imgurl[i].parent.parent.attribs.href,
+                    imgnums:1,
+                    imgurl:img.substring(img.indexOf('http'),img.length-2),
+                    title:imgurl[i].prev.prev.children["1"].children["1"].children["0"].data
+                })
+            }
+
         }
         res.send(items);
     }

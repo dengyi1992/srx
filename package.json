@@ -22,5 +22,8 @@
     "request": "latest",
     "serve-favicon": "~2.3.0",
     "superagent": "^1.7.2"
+  },
+  "devDependencies": {
+    "formidable": "latest"
   }
 }
