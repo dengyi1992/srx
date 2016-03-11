@@ -12,8 +12,8 @@ var mysql = require('mysql');
 var http = require('http');
 var fs = require('fs');
 var conn = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
+    host: '120.27.41.245',
+    user: 'srx',
     password: 'dengyi',
     database: 'srx',
     port: 3306
@@ -63,9 +63,10 @@ router.get('/', function (req, res, next) {
 
         }
         res.send(items);
+        myEvents.emit('geted',items);
     }
 
-    //myEvents.emit('geted',items);
+
 
 
 
@@ -75,13 +76,13 @@ myEvents.on('geted', function (items) {
     //寫入數據庫
     for (var i = 0; i < items.length; i++) {
         var userAddSql_Params = '';
-        var userAddSql = ''
-        if (items[i].imgnums == 1) {
-            userAddSql_Params = [items[i].title, items[i].link, items[i].imgurl];
-            userAddSql = 'INSERT INTO toutiao(title,url,imgnums,imgurl) VALUES(?,?,1,?)';
+        var userAddSql = '';
+        if (items[i].imgnums == 0) {
+            userAddSql_Params = [items[i].title, items[i].url, items[i].imgnums];
+            userAddSql = 'INSERT INTO toutiao_movie(title,url,imgnums) VALUES(?,?,0)';
         } else {
-            userAddSql_Params = [items[i].title, items[i].link, items[i].imgurl1, items[i].imgurl2, items[i].imgurl3];
-            userAddSql = 'INSERT INTO toutiao(title,url,imgnums,imgurl1,imgurl2,imgurl3) VALUES(?,?,3,?,?,?)';
+            userAddSql_Params = [items[i].title, items[i].url, items[i].imgurl];
+            userAddSql = 'INSERT INTO toutiao_movie(title,url,imgnums,imgurl) VALUES(?,?,1,?)';
 
         }
 
@@ -94,7 +95,6 @@ myEvents.on('geted', function (items) {
 
 
     }
-
 });
 
 module.exports = router;

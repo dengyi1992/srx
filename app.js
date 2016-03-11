@@ -33,6 +33,11 @@ var zanker = require('./routes/zanker');
 var recommend= require('./routes/recommend');
 var common_i =require('./routes/common');
 var toutiao_common_c =require('./routes/toutiao_common_c');
+var neihan_c =require('./routes/neihan_c');
+var neihan =require('./routes/neihan');
+var budejie_c =require('./routes/budejie_c');
+var budejie =require('./routes/budejie');
+
 /**
  * 登錄
  */
@@ -84,6 +89,9 @@ app.use('/buxingjie',buxingjie);
 app.use('/toutiao_common',toutiao_common);
 app.use('/zanker',zanker);
 app.use('/toutiao_common_c',toutiao_common_c);
+app.use('/neihan_c',neihan_c);
+app.use('/budejie_c',budejie_c);
+
 /**
  * 管理員登錄
  */
@@ -126,6 +134,8 @@ app.use('/admin_login',admin_login);
  */
 app.use('/recommend',recommend);
 app.use('/common',common_i);
+app.use('/neihan',neihan);
+app.use('/budejie',budejie);
 // catch 404 and forward to error handler
 
 app.use('/upload',upload);
