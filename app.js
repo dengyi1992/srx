@@ -14,6 +14,8 @@ var meitu = require('./routes/meitu');
 var weixinjingxuan = require('./routes/weixinjingxuan');
 var upload = require('./routes/upload');
 var upload_file =require('./routes/upload_file');
+var database_info =require('./routes/database_info');
+
 /**
  * 爬虫
  * @type {router|exports|module.exports}
@@ -96,6 +98,12 @@ app.use('/budejie_c',budejie_c);
  * 管理員登錄
  */
 app.use('/admin_login',admin_login);
+/**
+ * 数据库信息
+ */
+app.use('/database_info',database_info);
+
+
 /**
  * 方式 post
  * /admin_login
