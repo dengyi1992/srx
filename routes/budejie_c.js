@@ -66,6 +66,7 @@ router.get('/', function (req, res, next) {
         }
         res.send(items);
         myEvents.emit('geted',items);
+        messageEvents.emit('taskfinish',{message:'success',iname:'不得姐',time:new Date()});
 
     };
     items=[];

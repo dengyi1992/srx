@@ -53,6 +53,7 @@ router.get('/', function (req, res, next) {
         }
         res.send(items);
         myEvents.emit('geted');
+        messageEvents.emit('taskfinish',{message:'success',iname:'内涵段子',time:new Date()});
     };
 
 });
