@@ -50,7 +50,11 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-
+var EventEmitter = require('events').EventEmitter;
+/**
+ * 定义全局事件对象
+ */
+messageEvents = new EventEmitter();
 APP_PATH=__dirname;
 
 // uncomment after placing your favicon in /public
@@ -178,6 +182,24 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
+var server = require('http').Server(app);
+var io = require('socket.io')(server);
 
+server.listen(2999);
+io.on('connection', function (socket) {
+  console.log("connection");
+  socket.emit('dengyi',{deng:'这是测试数据'});
+  socket.on('new admin', function (data) {
+    console.log(data);
+  });
+
+  messageEvents.on('taskfinish',function(data){
+    console.log(data);
+    socket.emit('taskfinish',data);
+  });
+
+
+
+});
 
 module.exports = app;

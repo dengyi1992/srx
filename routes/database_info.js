@@ -25,7 +25,7 @@ router.get('/', function(req, res, next) {
       res.json({msg:'err',content:'数据库错误'});
 
     }else {
-      console.log(rows);
+      //console.log(rows);
       res.json({msg:'success',content:rows});
     }
 

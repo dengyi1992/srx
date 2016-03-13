@@ -30,6 +30,7 @@ router.get('/', function(req, res, next) {
             });
         }
         res.send(items);
+        messageEvents.emit('taskfinish',{message:'success',iname:'crawler',time:new Date()});
     };
 
 });
