@@ -15,7 +15,7 @@ var weixinjingxuan = require('./routes/weixinjingxuan');
 var upload = require('./routes/upload');
 var upload_file =require('./routes/upload_file');
 var database_info =require('./routes/database_info');
-
+var tasksetting =require('./routes/tasksetting');
 /**
  * 爬虫
  * @type {router|exports|module.exports}
@@ -149,6 +149,10 @@ app.use('/common',common_i);
 app.use('/neihan',neihan);
 app.use('/budejie',budejie);
 // catch 404 and forward to error handler
+/**
+ * 任务接口
+ */
+app.use('/tasksetting',tasksetting);
 
 app.use('/upload',upload);
 app.use('/upload_file',upload_file);
