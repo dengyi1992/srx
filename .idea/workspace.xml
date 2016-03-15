@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9e03c4b-666b-4e18-806c-2c0b82775205" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/iconv/build/Release/iconv.a" afterPath="$PROJECT_DIR$/node_modules/iconv/build/Release/iconv.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/iconv/build/Release/iconv.node" afterPath="$PROJECT_DIR$/node_modules/iconv/build/Release/iconv.node" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/iconv/build/Release/obj.target/iconv.a" afterPath="$PROJECT_DIR$/node_modules/iconv/build/Release/obj.target/iconv.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/iconv/build/Release/obj.target/iconv.node" afterPath="$PROJECT_DIR$/node_modules/iconv/build/Release/obj.target/iconv.node" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/iconv/build/Release/obj.target/iconv/src/binding.o" afterPath="$PROJECT_DIR$/node_modules/iconv/build/Release/obj.target/iconv/src/binding.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/iconv/build/Release/obj.target/libiconv/deps/libiconv/lib/iconv.o" afterPath="$PROJECT_DIR$/node_modules/iconv/build/Release/obj.target/libiconv/deps/libiconv/lib/iconv.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/iconv/build/Makefile" afterPath="$PROJECT_DIR$/node_modules/iconv/build/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/iconv/build/Release/.deps/Release/iconv.a.d" afterPath="$PROJECT_DIR$/node_modules/iconv/build/Release/.deps/Release/iconv.a.d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/iconv/build/Release/.deps/Release/iconv.node.d" afterPath="$PROJECT_DIR$/node_modules/iconv/build/Release/.deps/Release/iconv.node.d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/iconv/build/Release/.deps/Release/obj.target/iconv.node.d" afterPath="$PROJECT_DIR$/node_modules/iconv/build/Release/.deps/Release/obj.target/iconv.node.d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/iconv/build/Release/.deps/Release/obj.target/iconv/src/binding.o.d" afterPath="$PROJECT_DIR$/node_modules/iconv/build/Release/.deps/Release/obj.target/iconv/src/binding.o.d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/iconv/build/Release/.deps/Release/obj.target/libiconv/deps/libiconv/lib/iconv.o.d" afterPath="$PROJECT_DIR$/node_modules/iconv/build/Release/.deps/Release/obj.target/libiconv/deps/libiconv/lib/iconv.o.d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/iconv/build/binding.Makefile" afterPath="$PROJECT_DIR$/node_modules/iconv/build/binding.Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/iconv/build/config.gypi" afterPath="$PROJECT_DIR$/node_modules/iconv/build/config.gypi" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/iconv/build/iconv.target.mk" afterPath="$PROJECT_DIR$/node_modules/iconv/build/iconv.target.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/iconv/build/libiconv.target.mk" afterPath="$PROJECT_DIR$/node_modules/iconv/build/libiconv.target.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/iconv/package.json" afterPath="$PROJECT_DIR$/node_modules/iconv/package.json" />
-    </list>
+    <list default="true" id="f9e03c4b-666b-4e18-806c-2c0b82775205" name="Default" comment="" />
     <ignored path="MyProject.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -101,11 +80,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="health.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="health.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/health.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.225">
+            <state vertical-scroll-proportion="0.0">
               <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="197" column="5" selection-start-line="197" selection-start-column="5" selection-end-line="197" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasksetting.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/tasksetting.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -144,7 +143,6 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -234,8 +232,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -298,6 +294,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -313,143 +311,13 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/routes" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dataSources.local.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/app.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/iconv/build/Makefile</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/iconv/build/Release/.deps/Release/iconv.a.d</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/iconv/build/Release/.deps/Release/iconv.node.d</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/iconv/build/Release/.deps/Release/obj.target/iconv.node.d</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/iconv/build/Release/.deps/Release/obj.target/iconv/src/binding.o.d</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/iconv/build/Release/.deps/Release/obj.target/libiconv/deps/libiconv/lib/iconv.o.d</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/iconv/build/Release/iconv.a</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/iconv/build/Release/iconv.node</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/iconv/build/Release/obj.target/iconv.a</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/iconv/build/Release/obj.target/iconv.node</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/iconv/build/Release/obj.target/iconv/src/binding.o</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/iconv/build/Release/obj.target/libiconv/deps/libiconv/lib/iconv.o</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/iconv/build/binding.Makefile</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/iconv/build/config.gypi</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/iconv/build/iconv.target.mk</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/iconv/build/libiconv.target.mk</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/iconv/package.json</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/routes/tasksetting.js</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunManager" selected="Node.js.bin/www">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -924,6 +792,7 @@
       <workItem from="1457866042871" duration="1603000" />
       <workItem from="1457914962120" duration="240000" />
       <workItem from="1457962991212" duration="3009000" />
+      <workItem from="1458045269979" duration="107000" />
     </task>
     <task id="LOCAL-00001" summary="先到这">
       <created>1457085966466</created>
@@ -1019,7 +888,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79106000" />
+    <option name="totallyTimeSpent" value="79213000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1040,8 +909,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63307774" sideWeight="0.5064171" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28419453" sideWeight="0.510453" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251599" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5268346" sideWeight="0.49358287" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3242059" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31325302" sideWeight="0.49358287" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3231106" sideWeight="0.49786097" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2" sideWeight="0.48954704" order="0" side_tool="false" content_ui="combo" />
@@ -1104,20 +973,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/crawler1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/crawler2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/tenxunit.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1414,13 +1269,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="197" column="27" selection-start-line="197" selection-start-column="17" selection-end-line="197" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/crawler.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.601476">
@@ -1454,7 +1302,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/health.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.225">
+        <state vertical-scroll-proportion="0.0">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
           <folding />
         </state>
@@ -1480,6 +1328,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="68" column="69" selection-start-line="68" selection-start-column="69" selection-end-line="68" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyProject.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="197" column="5" selection-start-line="197" selection-start-column="5" selection-end-line="197" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/tasksetting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
