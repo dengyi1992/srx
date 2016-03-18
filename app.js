@@ -39,7 +39,7 @@ var neihan_c =require('./routes/neihan_c');
 var neihan =require('./routes/neihan');
 var budejie_c =require('./routes/budejie_c');
 var budejie =require('./routes/budejie');
-
+require('./controler/schedule_update');
 /**
  * 登錄
  */
