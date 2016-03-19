@@ -39,6 +39,9 @@ var neihan_c =require('./routes/neihan_c');
 var neihan =require('./routes/neihan');
 var budejie_c =require('./routes/budejie_c');
 var budejie =require('./routes/budejie');
+var yule = require('./routes/yule');
+var qiubai_c = require('./routes/qiubai');
+
 require('./controler/schedule_update');
 /**
  * 登錄
@@ -97,7 +100,7 @@ app.use('/zanker',zanker);
 app.use('/toutiao_common_c',toutiao_common_c);
 app.use('/neihan_c',neihan_c);
 app.use('/budejie_c',budejie_c);
-
+app.use('/qiubai_c',qiubai_c)
 /**
  * 管理員登錄
  */
